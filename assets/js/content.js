@@ -49,6 +49,16 @@ export const portfolioItems = [
     },
     category: "excel",
   },
+    {
+    title: "Python and Excel Work",
+    year: "2025",
+    link: "excel-work.html",
+    image: {
+      src: "assets/img/python.png",
+      alt: "",
+    },
+    category: "excel",
+  },
 ];
 
 export const iconBoxes = [
