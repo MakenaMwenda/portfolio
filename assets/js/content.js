@@ -7,7 +7,7 @@ export const portfolioItems = [
       src: "assets/img/portfolio/sql-portfolio-img.jpeg",
       alt: "",
     },
-    category: "sql",
+    category: ["sql"],
   },
   {
     title: "The Varsity Newspaper",
@@ -17,7 +17,7 @@ export const portfolioItems = [
       src: "assets/img/portfolio/tableau-portfolio-img.jpeg",
       alt: "",
     },
-    category: "tableau",
+    category: ["tableau"],
   },
   {
     title: "Low Tides Properties",
@@ -27,7 +27,7 @@ export const portfolioItems = [
       src: "assets/img/portfolio/python-portfolio-img.jpeg",
       alt: "",
     },
-    category: "python",
+    category: ["python"],
   },
   {
     title: "Practice Exploratory",
@@ -37,7 +37,7 @@ export const portfolioItems = [
       src: "assets/img/portfolio/powerbi-portfolio-img.jpeg",
       alt: "",
     },
-    category: "powerbi",
+    category: ["powerbi"],
   },
   {
     title: "Excel Work",
@@ -47,9 +47,9 @@ export const portfolioItems = [
       src: "assets/img/portfolio/excel-portfolio-img.jpeg",
       alt: "",
     },
-    category: "excel",
+    category: ["excel"],
   },
-    {
+  {
     title: "Python and Excel Work",
     year: "2025",
     link: "excel-work.html",
@@ -57,7 +57,7 @@ export const portfolioItems = [
       src: "assets/img/python.png",
       alt: "",
     },
-    category: "excel",
+    category: ["excel", "python"],
   },
 ];
 

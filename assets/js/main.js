@@ -153,7 +153,11 @@ import { portfolioItems, iconBoxes } from "./content.js";
   // Step 2: Render portfolio items
   portfolioItems.forEach((item) => {
     const div = document.createElement("div");
-    div.className = `col-lg-4 col-md-6 portfolio-item isotope-item filter-${item.category}`;
+    const categoryClasses = item.category
+      .map((cat) => `filter-${cat}`)
+      .join(" ");
+
+    div.className = `col-lg-4 col-md-6 portfolio-item isotope-item ${categoryClasses}`;
 
     div.innerHTML = `
       <div class="portfolio-content h-100">
@@ -193,6 +197,7 @@ import { portfolioItems, iconBoxes } from "./content.js";
 
       // Get filter value and apply filter on isotope
       const filterValue = this.getAttribute("data-filter");
+
       if (iso) {
         iso.arrange({ filter: filterValue });
       }
@@ -289,4 +294,3 @@ import { portfolioItems, iconBoxes } from "./content.js";
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
 })();
-
