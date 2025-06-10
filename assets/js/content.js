@@ -64,7 +64,7 @@ export const portfolioItems = [
 export const iconBoxes = [
   {
     iconClass: "bi bi-activity",
-    title: "51+",
+    title: "50+",
     description: "Personal Data Analysis Project",
     link: "#",
   },
