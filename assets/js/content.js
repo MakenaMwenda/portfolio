@@ -1,6 +1,6 @@
 export const portfolioItems = [
   {
-    title: "SQL 123",
+    title: "SQL",
     year: "2025",
     link: "sql.html",
     image: {
