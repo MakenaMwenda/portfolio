@@ -16,44 +16,34 @@ It has two lists:
 2. iconBoxes – for quick facts or experiences (like "51+ Projects", "3+ Years Research")
 
 ------------------------------
-How the content shows up
+How the Images shows up
 ------------------------------
-
-The website loads the data from content.js and puts it into the webpage automatically using JavaScript.
-
-This happens in this file:
-
-assets/js/render.js
-
-You don’t need to do anything here unless you want to change how it looks or is displayed.
+The website loads the images from this folder:
+assets/img/portfolio
 
 ------------------------------
-What you need in the HTML file
+How to update new page
 ------------------------------
-
-In the main HTML file (index.html), make sure there are these two sections:
-
-<section id="portfolio"></section>
-<section id="icon-boxes"></section>
-
-Also, at the bottom of the file, add this line to make everything work:
-
-<script type="module" src="assets/js/render.js"></script>
+1. Duplicate the dummy-page.html file
+2. Rename it to your desired name (add .html extension)
+3. Update the content in the new file
+4. Add the data in content.js file with the name in step 2
 
 ------------------------------
-How to update the content
+Prompt for updating html
 ------------------------------
+Act as a web developer and update the html file with the corrsponding headings
+here are the details :
+project name: 
+project description: 
+introduction : 
+objective : 
+methodology : 
+    data preparation : 
+    feature engineering : 
+    dashboard development : 
+    what-if simulations : 
+    forecasting and projection : 
 
-To change or add new projects or experiences:
+results : 
 
-1. Open assets/js/content.js
-2. Update the items inside the "portfolioItems" and "iconBoxes" lists
-3. Save the file and refresh the webpage
-
-You do not need to touch any other files.
-
-------------------------------
-Need help?
-------------------------------
-
-If you need help updating the content or adding new items, just ask!
