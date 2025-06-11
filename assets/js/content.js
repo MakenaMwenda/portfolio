@@ -64,13 +64,13 @@ export const portfolioItems = [
 export const iconBoxes = [
   {
     iconClass: "bi bi-activity",
-    title: "50+",
+    title: "20+",
     description: "Personal Data Analysis Project",
     link: "#",
   },
   {
     iconClass: "bi bi-gem",
-    title: "1+ Year",
+    title: "2+ Year",
     description: "Professional + Freelancing + Internship experience",
     link: "#",
   },
@@ -82,8 +82,8 @@ export const iconBoxes = [
   },
   {
     iconClass: "bi bi-command",
-    title: "3+ Years",
-    description: "Research Experience (2 Published Research Papers)",
+    title: "1+ Years",
+    description: "Research Experience ",
     link: "#",
   },
 ];
