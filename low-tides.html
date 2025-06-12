@@ -113,48 +113,85 @@
                         The goal was to demonstrate how data insights could support business teams in identifying high-performing product types and upsell opportunities based on client demographics and product usage.
 
                   </p>
-                        <style>
-                          body {
-                            counter-reset: section sub;
-                          }
-                        
-                          h2 {
-                            counter-increment: section;
-                            counter-reset: sub;
-                            color: #203350;
-                          }
-                        
-                          h2::before {
-                            content: counter(section) ". ";
-                            font-weight: bold;
-                          }
-                        
-                          h3 {
-                            counter-increment: sub;
-                            color: #d99a7d;
-                          }
-                        
-                          h3::before {
-                            content: counter(section) "." counter(sub) " ";
-                            font-weight: bold;
-                          }
-                        </style>
-                        
-                        <h2>Introduction</h2>
-                        <h2>Objective</h2>
-                        <h2>Methodology</h2>
-                        <h3>Data Preparation</h3>
-                        <h3>Feature Engineering</h3>
-                        <h3>Dashboard Development</h3>
-                        <h3>What-If Simulations</h3>
-                        <h3>Forecasting and Projection</h3>
-                        <h2>Results</h2>
+                       <style>
+  body {
+    counter-reset: section sub;
+  }
 
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+  h2 {
+    counter-increment: section;
+    counter-reset: sub;
+    color: #203350;
+  }
+
+  h2::before {
+    content: counter(section) ". ";
+    font-weight: bold;
+  }
+
+  h3 {
+    counter-increment: sub;
+    color: #d99a7d;
+  }
+
+  h3::before {
+    content: counter(section) "." counter(sub) " ";
+    font-weight: bold;
+  }
+</style>
+
+<h2>Project Name</h2>
+<p><strong>LowTide Properties – Public Engagement Dashboard for South Flats Installation</strong></p>
+
+<h2>Project Description</h2>
+<p>
+  Developed a digital engagement and analytics prototype to support a public art installation in Vancouver’s South Flats. Using Power BI and Python, the goal was to simulate how interaction data like foot traffic and dwell time could inform activation design and stakeholder decisions.
+</p>
+
+<h2>Introduction</h2>
+<p>
+  To support a motion-responsive sculpture installation, I partnered with LowTide Properties to design a prototype system that models how real-time engagement data might be captured and analyzed. The prototype used Power BI to visualize interaction trends and Python to automate KPI monitoring, offering a glimpse of how technology can support responsive public space planning.
+</p>
+
+<h2>Objective</h2>
+<p>
+  The primary goal was to demonstrate how digital engagement metrics could validate the value of the installation and inform future scalability. The system needed to simulate how foot traffic, dwell time, and zone-based interactions could be captured and turned into actionable insights for stakeholders.
+</p>
+
+<h2>Methodology</h2>
+
+<h3>Data Preparation</h3>
+<p>
+  I generated synthetic datasets representing foot traffic counts, dwell time logs, and zone-based motion sensor triggers. This allowed for early-stage modeling in the absence of real-time hardware.
+</p>
+
+<h3>Feature Engineering</h3>
+<p>
+  Created time-of-day flags, weekday/weekend segmentation, and interaction zone labels to enrich the dataset for analysis.
+</p>
+
+<h3>Dashboard Development</h3>
+<p>
+  Built a Power BI dashboard featuring key engagement KPIs, heatmap overlays, and zone comparisons. Metrics such as average dwell time, peak visitation periods, and engagement by location were visualized to guide planning.
+</p>
+
+<h3>What-If Simulations</h3>
+<p>
+  Simulated different scheduling scenarios and public flow patterns to test responsiveness under varying conditions (e.g., weekday vs weekend).
+</p>
+
+<h3>Forecasting and Projection</h3>
+<p>
+  Projected engagement patterns based on seasonal trends and community survey results to estimate the impact of future installations.
+</p>
+
+<h2>Results</h2>
+<ul>
+  <li>The dashboard identified engagement peaks at 11 AM, 2 PM, and 6 PM, with longer dwell times on weekends.</li>
+  <li>“Wing Left” and “Entrance” zones had the highest interaction frequency.</li>
+  <li>A Python script was used to automate alerts when dwell time KPIs dropped below defined thresholds.</li>
+  <li>Community survey data confirmed strong support from Mount Pleasant and Kitsilano residents and showed a demand for interactive and co-created installation types.</li>
+</ul>
 
 
           <div class="container" data-aos="fade-up">
