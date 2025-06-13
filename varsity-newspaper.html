@@ -101,6 +101,32 @@
         </nav>
       </div>
       <!-- End Page Title -->
+       <style>
+            body {
+              counter-reset: section sub;
+            }
+          
+            h2 {
+              counter-increment: section;
+              counter-reset: sub;
+              color: #203350;
+            }
+          
+            h2::before {
+              content: counter(section) ". ";
+              font-weight: bold;
+            }
+          
+            h3 {
+              counter-increment: sub;
+              color: #d99a7d;
+            }
+          
+            h3::before {
+              content: counter(section) "." counter(sub) " ";
+              font-weight: bold;
+            }
+          </style>
   <h2>Project Name</h2>
           <p>LowTide Properties – Public Engagement Dashboard for South Flats Installation</p>
           
