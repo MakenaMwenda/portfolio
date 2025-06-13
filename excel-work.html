@@ -99,6 +99,111 @@
         </nav>
       </div>
       <!-- End Page Title -->
+      <!-- Portfolio Details Section -->
+        <section id="portfolio-details" class="portfolio-details section">
+          <div class="container">
+            <div class="row justify-content-start gy-4 mt-4 pe-4">
+              <div class="" data-aos="fade-up">
+                
+            <style>
+            body {
+              counter-reset: section sub;
+            }
+          
+            h2 {
+              counter-increment: section;
+              counter-reset: sub;
+              color: #203350;
+            }
+          
+            h2::before {
+              content: counter(section) ". ";
+              font-weight: bold;
+            }
+          
+            h3 {
+              counter-increment: sub;
+              color: #d99a7d;
+            }
+          
+            h3::before {
+              content: counter(section) "." counter(sub) " ";
+              font-weight: bold;
+            }
+          </style>
+          
+          <h2>Project Name</h2>
+          <p>LowTide Properties – Public Engagement Dashboard for South Flats Installation</p>
+          
+          <h2>Project Description</h2>
+          <p>
+            Designed a data-driven prototype to help visualize and measure community interaction with a proposed public art installation in Vancouver’s South Flats. Using Power BI and Python, I simulated how metrics like foot traffic and dwell time could be tracked, analyzed, and used to support design choices and stakeholder decision-making.
+          </p>
+          
+          <h2>Introduction</h2>
+          <p>
+             I was engaged by Low Tide Properties to develop a digital prototype for a motion-responsive public art installation in Vancouver’s South Flats. The goal was to simulate how the sculpture could measure and respond to real-time public engagement. To support this, I built a Power BI dashboard and data model that visualized interaction data, such as foot traffic and dwell time, to inform future decisions around public space activations.
+          
+          <h2>Objective</h2>
+          <p>
+            The primary goal was to demonstrate how digital engagement metrics could validate the value of the installation and inform future scalability. The system needed to simulate how foot traffic, dwell time, and zone-based interactions could be captured and turned into actionable insights for stakeholders.
+          </p>
+          
+          <h2>Methodology</h2>
+          
+          <h3>Data Preparation</h3>
+          <p>
+            I generated synthetic datasets representing foot traffic counts, dwell time logs, and zone-based motion sensor triggers. This allowed for early-stage modeling in the absence of real-time hardware.
+          </p>
+          
+          <h3>Feature Engineering</h3>
+          <p>
+            Created time-of-day flags, weekday/weekend segmentation, and interaction zone labels to enrich the dataset for analysis.
+          </p>
+          
+          <h3>Dashboard Development</h3>
+          <p>
+            Built a Power BI dashboard featuring key engagement KPIs, heatmap overlays, and zone comparisons. Metrics such as average dwell time, peak visitation periods, and engagement by location were visualized to guide planning.
+          </p>
+          
+          <h3>What-If Simulations</h3>
+          <p>
+            I designed scenario models in Power BI to explore how different external factors might affect public engagement with the installation. These simulations included:
+          </p>
+          <ul style="margin-left: 1.5rem;">
+            <li><strong>Time-Based Scheduling:</strong> Compared weekday vs. weekend performance, and tested the impact of shifting activation times (e.g., from morning to evening) on foot traffic and dwell time.</li>
+            <li><strong>Weather Impact Scenarios:</strong> Modeled hypothetical reductions in engagement during rainy days, using historical weather trends to simulate expected footfall drops and test dashboard responsiveness.</li>
+            <li><strong>Zone Accessibility Changes:</strong> Assessed how temporarily closing one interaction zone (e.g., “Wing Left”) would affect overall engagement and redistribute activity across other areas.</li>
+            <li><strong>Alert Threshold Sensitivity:</strong> Used Python to simulate how different KPI thresholds (e.g., dwell time dropping from 8 to 5 minutes) would trigger alerts and recommend adjustments to the installation’s programming or design.</li>
+          </ul>
+        <p>
+          These simulations helped demonstrate how real-time data and predictive modeling could be used not just for reporting, but for actively optimizing public space experiences.
+        </p>
+
+
+          <h3>Forecasting and Projection</h3>
+          <ul style="margin-left: 1.5rem;">
+            <li>
+              I used Power BI to create simple forecast visuals that estimated how engagement with the installation might change over time. By simulating different time periods, I identified that spring and summer months would likely have higher foot traffic and longer dwell times—helping suggest the best times to launch or scale the installation.
+            </li>
+            <li>
+              Based on community survey results, I also projected how engagement might increase with more local awareness or marketing. For example, I modeled a 10–15% increase in foot traffic if outreach was improved in nearby neighborhoods like Mount Pleasant and Kitsilano.
+            </li>
+            <li>
+              I used Python to help test how these changes could affect key metrics like average dwell time. This allowed me to explore whether certain areas of the installation might need extra support, and to give stakeholders a simple preview of what success could look like over time.
+            </li>
+          </ul>
+          
+          
+          
+          <h2>Results</h2>
+          <ul>
+            <li>The dashboard identified engagement peaks at 11 AM, 2 PM, and 6 PM, with longer dwell times on weekends.</li>
+            <li>“Wing Left” and “Entrance” zones had the highest interaction frequency.</li>
+            <li>A Python script was used to automate alerts when dwell time KPIs dropped below defined thresholds.</li>
+            <li>Community survey data confirmed strong support from Mount Pleasant and Kitsilano residents and showed a demand for interactive and co-created installation types.</li>
+          </ul>
+
 
       <!-- Portfolio Details Section -->
       <section id="portfolio-details" class="portfolio-details section">
