@@ -137,19 +137,19 @@
           
           <h2>Project Description</h2>
           <p>
-            Designed a data-driven prototype to help visualize and measure community interaction with a proposed public art installation in Vancouver’s South Flats. Using Power BI and Python, I simulated how metrics like foot traffic and dwell time could be tracked, analyzed, and used to support design choices and stakeholder decision-making.
+            This Excel-based project analyzes credit risk indicators for businesses across Ontario using a public Kaggle dataset modeled on CIBC’s Credit Risk Monitoring. The data includes business type, revenue, debt-to-income ratios, and payment status. I built an Excel dashboard to help financial analysts assess account risk, track payment behavior by sector, and support more informed credit decisions.
           </p>
-          
-          <h2>Introduction</h2>
-          <p>
-             I was engaged by Low Tide Properties to develop a digital prototype for a motion-responsive public art installation in Vancouver’s South Flats. The goal was to simulate how the sculpture could measure and respond to real-time public engagement. To support this, I built a Power BI dashboard and data model that visualized interaction data, such as foot traffic and dwell time, to inform future decisions around public space activations.
           
           <h2>Objective</h2>
           <p>
-            The primary goal was to demonstrate how digital engagement metrics could validate the value of the installation and inform future scalability. The system needed to simulate how foot traffic, dwell time, and zone-based interactions could be captured and turned into actionable insights for stakeholders.
+           The aim was to create a tool that could identify high-risk accounts and visualize payment trends at scale. This included developing logic to classify customers by risk level, analyzing debt patterns by city, and generating metrics for credit monitoring and portfolio management.
+
           </p>
           
           <h2>Methodology</h2>
+          <p>  
+            I used core Excel functions—VLOOKUP to classify risk levels based on late payments, and SUMIF/SUMIFS to analyze payment patterns by city and business type. I also added a calculated column to determine each customer’s delinquency rate, defined as late payments divided by open credit accounts. This allowed for quick comparisons between customer profiles and identification of unusually high-risk cases.
+         <p>  
           
           <h3>Data Preparation</h3>
           <p>
@@ -198,8 +198,8 @@
           
           <h2>Results</h2>
           <ul>
-            <li>The dashboard identified engagement peaks at 11 AM, 2 PM, and 6 PM, with longer dwell times on weekends.</li>
-            <li>“Wing Left” and “Entrance” zones had the highest interaction frequency.</li>
+            <li>Certain cities like Hamilton and London had higher concentrations of late payments, signalling geographic risk clusters.</li>
+            <li>Response time inconsistencies across assignees were visible in the pivot table; some team members consistently closed requests faster, signaling uneven workloads or skill mismatches</li>
             <li>A Python script was used to automate alerts when dwell time KPIs dropped below defined thresholds.</li>
             <li>Community survey data confirmed strong support from Mount Pleasant and Kitsilano residents and showed a demand for interactive and co-created installation types.</li>
           </ul>
