@@ -74,7 +74,11 @@
     </header>
     <!-- DO NOT EDIT -->
 
- <main class="main">
+  <section id="portfolio-details" class="portfolio-details section">
+  <div class="container">
+    <div class="row justify-content-start gy-4 mt-4 pe-4">
+      <div class="" data-aos="fade-up">
+      <main class="main">
 
   <!-- Page Title -->
   <div class="page-title" style="background-color: #1c2f4a; padding: 60px 0;"> <!-- Full-width section -->
@@ -106,6 +110,31 @@
 
 </main>
 
+<style>
+  body {
+    counter-reset: section sub;
+  }
+
+  h2 {
+    counter-increment: section;
+    counter-reset: sub;
+    color: #203350;
+  }
+
+  h2::before {
+    content: counter(section) ". ";
+    font-weight: bold;
+  }
+
+  h3 {
+    counter-increment: sub;
+    color: #d99a7d;
+  }
+
+  h3::before {
+    content: counter(section) "." counter(sub) " ";
+    font-weight: bold;
+  }
 </style>
 
 <h2>Project Name</h2>
