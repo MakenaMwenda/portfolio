@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Portfolio Details - Impact Bootstrap Template</title>
+    <title>SQL Case Study</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -74,87 +74,116 @@
     </header>
     <!-- DO NOT EDIT -->
 
-    <main class="main">
-      <!-- Page Title -->
-      <div class="page-title">
-        <div class="heading">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8 text-center">
-                <h1 class="mb-3">SQL</h1>
-                <p class="mb-0">
-                  This case study demonstrates how SQL can be used to extract insights, monitor performance, and support decision-making in the banking sector.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <nav class="breadcrumbs">
-          <div class="container">
-            <ol>
-              <li><a href="index.html">Home</a></li>
-              <li class="current">SQL Portfolio</li>
-            </ol>
-          </div>
-        </nav>
+  <section id="portfolio-details" class="portfolio-details section">
+  <div class="container">
+    <div class="row justify-content-start gy-4 mt-4 pe-4">
+      <div class="" data-aos="fade-up">
+
+<style>
+  body {
+    counter-reset: section sub;
+  }
+
+  h2 {
+    counter-increment: section;
+    counter-reset: sub;
+    color: #203350;
+  }
+
+  h2::before {
+    content: counter(section) ". ";
+    font-weight: bold;
+  }
+
+  h3 {
+    counter-increment: sub;
+    color: #d99a7d;
+  }
+
+  h3::before {
+    content: counter(section) "." counter(sub) " ";
+    font-weight: bold;
+  }
+</style>
+
+<h2>Project Name</h2>
+<p>Client Product Engagement Insights – Simulated SQL Case Study for RBC</p>
+
+<h2>Overview</h2>
+<p>
+  This project simulates the kind of task a Data Analyst Intern might complete for RBC’s Digital Banking & Analytics team. Using dummy client-product data in SQLite and DBeaver, I analyzed product engagement across Canadian provinces and client age groups. The case study demonstrates how SQL can support business questions such as identifying upsell candidates, evaluating product preferences by segment, and uncovering regional trends. Key techniques included <strong>joins</strong>, <strong>aggregations</strong>, <strong>filtering</strong>, and <strong>conditional logic</strong>—skills aligned with real-world analytics workflows.
+</p>
+
+<h2>Objective</h2>
+<p>
+  The goal was to showcase practical SQL capabilities for business analysis. These include aggregating product usage across client segments, identifying marketing opportunities by age and region, and supporting business questions with data-driven insights.
+</p>
+
+<h2>Methodology</h2>
+
+<h3>SQL Features Demonstrated</h3>
+<p>
+  To explore the data, I applied the following SQL techniques:
+</p>
+<ul style="margin-left: 1.5rem;">
+  <li><strong>JOINs</strong> to connect client, product, and transaction records</li>
+  <li><strong>COUNT()</strong>, <strong>AVG()</strong>, <strong>ROUND()</strong> to measure engagement and financial patterns</li>
+  <li><strong>WHERE</strong> and <strong>HAVING</strong> clauses for filtering based on conditions</li>
+  <li><strong>GROUP BY</strong> to organize insights by region or client demographics</li>
+  <li><strong>ORDER BY</strong> to rank results and identify high- or low-performing segments</li>
+</ul>
+
+<h2>Sample Queries and Insights</h2>
+
+<h3>Query 1: Average Product Usage by Province</h3>
+<p>
+  Calculated the average number of products held per client in each province.
+</p>
+<p>
+  <strong>Finding:</strong> Manitoba leads in average product usage, followed by Alberta and British Columbia.
+</p>
+
+<h3>Query 2: Top 3 Products Among Clients Aged 25–34</h3>
+<p>
+  Segmented data by age to find the most commonly held products among younger clients.
+</p>
+<p>
+  <strong>Finding:</strong> Credit cards were the most popular, followed by savings accounts and investment products.
+</p>
+
+<h3>Query 3: Average Balance by Product Type</h3>
+<p>
+  Analyzed how average balances varied across product types.
+</p>
+<p>
+  <strong>Finding:</strong> Investments and savings accounts had the highest average balances.
+</p>
+
+<h3>Query 4: Identify Clients with Only One Product (Upsell Candidates)</h3>
+<p>
+  Flagged under-engaged clients who hold only one RBC product.
+</p>
+<p>
+  <strong>Finding:</strong> Several clients showed untapped growth potential.
+</p>
+
+<h2>Results</h2>
+<ul>
+  <li>Stronger product engagement in Manitoba and Alberta</li>
+  <li>Clients aged 25–34 preferred credit and investment products</li>
+  <li>High average balances in savings and investment accounts</li>
+  <li>One-product clients identified for targeted upsell campaigns</li>
+</ul>
+
+<h2>Business Relevance</h2>
+<p>
+  These insights simulate how RBC could leverage product usage data to drive cross-sell strategy, personalize outreach, and enhance client retention. The case study reflects applied SQL proficiency aligned with the goals of a Digital Banking & Analytics team.
+</p>
+
       </div>
-      <!-- End Page Title -->
-
-      <!-- Portfolio Details Section -->
-        <section id="portfolio-details" class="portfolio-details section">
-          <div class="container">
-            <div class="row justify-content-start gy-4 mt-4 pe-4">
-              <div class="" data-aos="fade-up">
-                <div class="row justify-content-between gy-4 mt-4">
-  
-                  <h2>Project Description</h2>
-                  <p>
-                        As part of a simulated analytics project inspired by the Royal Bank of Canada, I worked with dummy data to analyze client engagement with financial products using structured SQL queries.  
-                        The goal was to demonstrate how data insights could support business teams in identifying high-performing product types and upsell opportunities based on client demographics and product usage.
-
-                  </p>
-                        <style>
-                          body {
-                            counter-reset: section sub;
-                          }
-                        
-                          h2 {
-                            counter-increment: section;
-                            counter-reset: sub;
-                            color: #203350;
-                          }
-                        
-                          h2::before {
-                            content: counter(section) ". ";
-                            font-weight: bold;
-                          }
-                        
-                          h3 {
-                            counter-increment: sub;
-                            color: #d99a7d;
-                          }
-                        
-                          h3::before {
-                            content: counter(section) "." counter(sub) " ";
-                            font-weight: bold;
-                          }
-                        </style>
-                        
-                        <h2>Introduction</h2>
-                        <h2>Objective</h2>
-                        <h2>Methodology</h2>
-                        <h3>Data Preparation</h3>
-                        <h3>Feature Engineering</h3>
-                        <h3>Dashboard Development</h3>
-                        <h3>What-If Simulations</h3>
-                        <h3>Forecasting and Projection</h3>
-                        <h2>Results</h2>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    </div>
+  </div>
+</section>
 
 
           <div class="container" data-aos="fade-up">
