@@ -10,6 +10,16 @@ export const portfolioItems = [
     category: ["sql"],
   },
   {
+    title: "CX and UX Work",
+    year: "2025",
+    link: "ux.html",
+    image: {
+      src: "assets/img/portfolio/cxux.png",
+      alt: "",
+    },
+    category: ["cxux"],
+  },
+  {
     title: "The Varsity Newspaper",
     year: "2025",
     link: "varsity-newspaper.html",
@@ -49,16 +59,7 @@ export const portfolioItems = [
     },
     category: ["excel"],
   },
-  {
-    title: "CX and UX Work",
-    year: "2025",
-    link: "ux.html",
-    image: {
-      src: "assets/img/portfolio/cxux.png",
-      alt: "",
-    },
-    category: ["cxux"],
-  },
+
 ];
 
 export const iconBoxes = [
@@ -77,7 +78,7 @@ export const iconBoxes = [
   {
     iconClass: "bi bi-easel",
     title: "2+ Years",
-    description: "Experience as a Private Tutor",
+    description: "UX + CX Experience",
     link: "#",
   },
   {
