@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>UX Case Study</title>
+    <title>Tableau Case Study</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -81,9 +81,11 @@
           <div class="container">
             <div class="row d-flex justify-content-center text-center">
               <div class="col-lg-8">
-                <h1>UX Case Study</h1>
+                <h1>The Varsity Newspaper</h1>
                 <p class="mb-0">
-                  This case study demonstrates my Figma, Miro, and Microsoft PowerPoint abilities
+                  The Varsity is the student newspaper of the University of
+                  Toronto, founded in 1880. It covers campus news, opinions, and
+                  student life.
                 </p>
               </div>
             </div>
@@ -93,110 +95,298 @@
           <div class="container">
             <ol>
               <li><a href="index.html">Home</a></li>
-              <li class="current">UX Case Study</li>
+              <li class="current">The Varsity Newspaper</li>
             </ol>
           </div>
         </nav>
       </div>
       <!-- End Page Title -->
-     <section id="portfolio-details" class="portfolio-details section">
-  <div class="container">
-    <div class="row justify-content-start gy-4 mt-4 pe-4">
-      <div class="" data-aos="fade-up">
+      <section id="portfolio-details" class="portfolio-details section">
+          <div class="container">
+            <div class="row justify-content-start gy-4 mt-4 pe-4">
+              <div class="" data-aos="fade-up">
+       <style>
+            body {
+              counter-reset: section sub;
+            }
+          
+            h2 {
+              counter-increment: section;
+              counter-reset: sub;
+              color: #203350;
+            }
+          
+            h2::before {
+              content: counter(section) ". ";
+              font-weight: bold;
+            }
+          
+            h3 {
+              counter-increment: sub;
+              color: #d99a7d;
+            }
+          
+            h3::before {
+              content: counter(section) "." counter(sub) " ";
+              font-weight: bold;
+            }
+          </style>
+  <h2>Project Name</h2>
+          <p>Varsity Newspaper – Analysing Pickup Rates Using Tableau</p>
+          
+          <h2>Project Description</h2>
+          <p>
+           As Creative Director at The Varsity, the University of Toronto’s student newspaper, I led visual strategy, layout design, and brand consistency across print and digital formats. While in this role, I became increasingly interested in how data could be used to optimize our content reach. This led to the development of a dashboard that visualizes newspaper pickup patterns across distribution stands in Toronto.
 
-        <style>
-          body {
-            counter-reset: section sub;
-          }
+          </p>
+          
+          <h2>Objective</h2>
+          <p>
+             <ul>
+            <li>Understand pickup behavior across different days, locations, and weather conditions.</li>
+            <li>Identify which stands and program zones had the highest engagement.</li>
+            <li>Optimize print volumes and distribution schedules to reduce waste and improve circulation efficiency.</li>
+          </ul>
+          </p>
+          
+          <h2>Methodology</h2>
+          
+          <h3>Data Preparation</h3>
+          <p>
+            Over a period of 4 months, I tracked newspaper pickup data across 10 physical stands placed in various zones across campus. Each stand’s inventory was restocked daily, and pickup counts were recorded once per day using physical sheet tracking and manual entry. This provided a consistent daily time series for each stand, allowing for comparative analysis across locations, days of the week, and program zones.
 
-          h2 {
-            counter-increment: section;
-            counter-reset: sub;
-            color: #203350;
-          }
+          </p>
+          
+          <h3>Feature Engineering</h3>
+          <p>
+           <h3>Feature Selection Rationale</h3>
+<p>
+  I selected variables such as <strong>“day of the week”</strong>, <strong>“program zone”</strong>, and <strong>“stand location”</strong> based on hypotheses about factors likely to influence pickup behavior:
+</p>
+<ul>
+  <li>
+    <strong>Day of the Week:</strong> I hypothesized that midweek editions (e.g., Wednesday and Thursday) might see higher engagement due to routine campus schedules and more stable foot traffic.
+  </li>
+  <li>
+    <strong>Program Zone:</strong> Since each stand was placed near buildings serving different academic programs (e.g., STEM, humanities, business), I wanted to explore whether faculty demographics or student routines influenced pickup rates.
+  </li>
+  <li>
+    <strong>Stand Location:</strong> Some stands were in high-traffic or social areas (e.g., cafeterias, libraries), while others were near lecture halls. I expected location type to significantly impact visibility and pickup volume.
+  </li>
+  <li>
+    <strong>Weather:</strong> After observing anomalies in the data, I introduced daily weather (rain vs. clear) to test if it explained sudden drops in pickup rates.
+  </li>
+</ul>
+<p>
+  These engineered variables allowed for more nuanced segmentation and helped surface actionable insights, such as adjusting print volume on rainy days or optimizing stand placement.
+</p>
 
-          h2::before {
-            content: counter(section) ". ";
-            font-weight: bold;
-          }
+          </p>
+          
+          <h3>Dashboard Development</h3>
+          <p>
+           The dashboard includes:
+          </p>
+           <ul style="margin-left: 1.5rem;">
+            <li>A map of distribution stands using latitude and longitude.</li>
+            <li>Bar and line graphs analyzing pickup trends by day of the week, weather, and time of drop.</li>
+            <li>Dual-axis charts comparing pickup percentage with count data per stand</li>
+          </ul>
+      
+          <h2>Results</h2>
+          <ul style="margin-left: 1.5rem;">
+            <li> Midweek drops, particularly on Thursdays, consistently saw the highest pickup rates, indicating a clear pattern in student engagement tied to academic routines.</li>
+            <li>Hart House and Koffler Centre emerged as key distribution points, while program zones like Mixed and Social Sciences had the most active readership.</li>
+            <li>Weather had a noticeable impact; clear days boosted pickups, while snow and rain reduced them significantly, suggesting seasonal adjustments could improve performance. </li>
+            <li>Surprisingly, the exact time of morning drop had little effect, offering flexibility in scheduling.</li>
+          </ul>
 
-          h3 {
-            counter-increment: sub;
-            color: #d99a7d;
-          }
+        
+                <h2>Outcome & Impact</h2>
+<p>
+  As a result of this analysis, I presented data-driven recommendations to the editorial and distribution teams. These insights led to tangible operational improvements, including:
+</p>
+<ul style="margin-left: 1.5rem;">
+  <li><strong>15–20% reduction in leftover print waste</strong> on low-pickup days by adjusting volume, especially for Monday and Friday editions.</li>
+  <li><strong>Repositioning of two stands</strong> from low-traffic academic zones to higher-visibility social spaces, resulting in an estimated 12% increase in weekly pickups at those locations.</li>
+  <li><strong>Improved midweek planning:</strong> Based on higher engagement on Wednesdays and Thursdays, the editorial team began releasing feature stories and opinion columns midweek, aligning content value with peak pickup behavior.</li>
+  <li><strong>Weather-aware adjustments:</strong> Teams began monitoring rain forecasts to preemptively reduce distribution where past data showed pickup rates dropped sharply during poor weather.</li>
+</ul>
+<p>
+  These outcomes not only reduced waste but also enhanced the paper’s visibility and reach, providing a simple framework for ongoing performance tracking using Tableau dashboards.
+</p>
 
-          h3::before {
-            content: counter(section) "." counter(sub) " ";
-            font-weight: bold;
-          }
-        </style>
+      <!-- Portfolio Details Section -->
+      <section id="portfolio-details" class="portfolio-details section">
+       
 
-        <h2>Project Name</h2>
-        <p>Varsity Newspaper – Analysing Pickup Rates Using Tableau</p>
+ <div class="container" data-aos="fade-up">
+            <div class="portfolio-details-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                },
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+                <img
+                  src="assets/img/portfolio/vasity-newspaper-inner.png"
+                  alt=""
+                />
+              </div>
 
-        <h2>Project Description</h2>
-        <p>
-          As Creative Director at The Varsity, the University of Toronto’s student newspaper, I led visual strategy, layout design, and brand consistency across print and digital formats. While in this role, I became increasingly interested in how data could be used to optimize our content reach. This led to the development of a dashboard that visualizes newspaper pickup patterns across distribution stands in Toronto.
-        </p>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/varsity6.png"
+                  alt=""
+                />
+              </div>
 
-        <h2>Objective</h2>
-        <ul style="margin-left: 1.5rem;">
-          <li>Understand pickup behavior across different days, locations, and weather conditions.</li>
-          <li>Identify which stands and program zones had the highest engagement.</li>
-          <li>Optimize print volumes and distribution schedules to reduce waste and improve circulation efficiency.</li>
-        </ul>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/varsity2.png"
+                  alt=""
+                />
+              </div>
+ <div class="swiper-slide">
+                <img
+                  src="assets/img/varsity3.png"
+                  alt=""
+                />
+              </div>
+ <div class="swiper-slide">
+                <img
+                  src="assets/img/varsity4.png"
+                  alt=""
+                />
+              </div>
+ <div class="swiper-slide">
+                <img
+                  src="assets/img/varsity5.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Details Section -->
+    </main>
 
-        <h2>Methodology</h2>
+         
 
-        <h3>Data Preparation</h3>
-        <p>
-          Over a period of 4 months, I tracked newspaper pickup data across 10 physical stands placed in various zones across campus. Each stand’s inventory was restocked daily, and pickup counts were recorded once per day using physical sheet tracking and manual entry. This provided a consistent daily time series for each stand, allowing for comparative analysis across locations, days of the week, and program zones.
-        </p>
+            <!-- <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="portfolio-info">
+                            <h3>Project information</h3>
+                            <ul>
+                                <li><strong>Category</strong> Web design</li>
+                                <li><strong>Client</strong> ASU Company</li>
+                                <li><strong>Project date</strong> 01 March, 2020</li>
+                                <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
+                                <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Details Section -->
+    </main>
 
-        <h3>Feature Selection Rationale</h3>
-        <p>
-          I selected variables such as <strong>day of the week</strong>, <strong>program zone</strong>, and <strong>stand location</strong> based on hypotheses about factors likely to influence pickup behavior:
-        </p>
-        <ul style="margin-left: 1.5rem;">
-          <li><strong>Day of the Week:</strong> Midweek editions (e.g., Wednesday and Thursday) might see higher engagement due to routine campus schedules and more stable foot traffic.</li>
-          <li><strong>Program Zone:</strong> I wanted to explore whether faculty demographics or student routines influenced pickup rates.</li>
-          <li><strong>Stand Location:</strong> I expected location type (social areas vs. academic halls) to significantly impact pickup volume.</li>
-          <li><strong>Weather:</strong> I introduced daily weather (rain vs. clear) to test if it explained sudden drops in pickup rates.</li>
-        </ul>
-        <p>
-          These engineered variables helped surface actionable insights, such as adjusting print volume on rainy days or optimizing stand placement.
-        </p>
+    <!-- DO NOT EDIT -->
+    <footer id="footer" class="footer accent-background">
+      <div class="container footer-top">
+        <div class="row gy-4 gx-10">
+          <div class="col-lg-5 col-md-12 me-auto footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">Makena Mwenda</span>
+            </a>
+            <p>
+              Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
+              nada terra videa magna derita valies darta donna mare fermentum
+              iaculis eu non diam phasellus.
+            </p>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
 
-        <h3>Dashboard Development</h3>
-        <ul style="margin-left: 1.5rem;">
-          <li>A map of distribution stands using latitude and longitude.</li>
-          <li>Bar and line graphs analyzing pickup trends by day of the week, weather, and time of drop.</li>
-          <li>Dual-axis charts comparing pickup percentage with count data per stand.</li>
-        </ul>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
 
-        <h2>Results</h2>
-        <ul style="margin-left: 1.5rem;">
-          <li>Midweek drops, particularly Thursdays, saw the highest pickup rates, indicating alignment with academic routines.</li>
-          <li>Hart House and Koffler Centre emerged as top-performing stands, with strong readership in Mixed and Social Sciences zones.</li>
-          <li>Weather impacted behavior—clear days boosted pickups while rain/snow reduced them, supporting seasonal strategy changes.</li>
-          <li>Time of drop had minimal influence, offering operational flexibility.</li>
-        </ul>
-
-        <h2>Outcome & Impact</h2>
-        <p>
-          As a result of this analysis, I presented data-driven recommendations to the editorial and distribution teams. These led to several improvements:
-        </p>
-        <ul style="margin-left: 1.5rem;">
-          <li><strong>15–20% reduction in leftover print waste</strong> on low-pickup days by adjusting print volume.</li>
-          <li><strong>Two stands repositioned</strong> to higher-traffic zones, increasing pickups by ~12%.</li>
-          <li><strong>Midweek content planning</strong> was improved, with features and opinion columns timed to align with highest engagement.</li>
-          <li><strong>Weather-aware distribution</strong> allowed teams to reduce waste on poor weather days based on past trends.</li>
-        </ul>
-        <p>
-          These changes improved reach, reduced waste, and provided a framework for ongoing distribution performance monitoring through Tableau.
-        </p>
-
+          <div
+            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+          >
+            <h4>Contact Us</h4>
+            <p>Toronto</p>
+            <p>Canada</p>
+            <p class="mt-4">
+              <strong>Phone:</strong> <span>+1 437 324 6808</span>
+            </p>
+            <p><strong>Email:</strong> <span>makena.maeve@gmail.com</span></p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+
+      <!-- <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Impact</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div> -->
+    </footer>
+    <!-- DO NOT EDIT -->
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>
+
