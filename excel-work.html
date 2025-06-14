@@ -132,31 +132,81 @@
             }
           </style>
           
-          <h2>Project Name</h2>
-          <p>CIBC’s Credit Risk Monitoring Excel Analysis</p>
-          
-          <h2>Project Description</h2>
-          <p>
-            This Excel-based project analyzes credit risk indicators for businesses across Ontario using a public Kaggle dataset modeled on CIBC’s Credit Risk Monitoring. The data includes business type, revenue, debt-to-income ratios, and payment status. I built an Excel dashboard to help financial analysts assess account risk, track payment behavior by sector, and support more informed credit decisions.
-          </p>
-          
-          <h2>Objective</h2>
-          <p>
-           The aim was to create a tool that could identify high-risk accounts and visualize payment trends at scale. This included developing logic to classify customers by risk level, analyzing debt patterns by city, and generating metrics for credit monitoring and portfolio management.
+         <section id="portfolio-details" class="portfolio-details section">
+  <div class="container">
+    <div class="row justify-content-start gy-4 mt-4 pe-4">
+      <div class="" data-aos="fade-up">
 
-          </p>
-          
-          <h2>Methodology</h2>
-          <p>  
-            I used core Excel functions—VLOOKUP to classify risk levels based on late payments, and SUMIF/SUMIFS to analyze payment patterns by city and business type. I also added a calculated column to determine each customer’s delinquency rate, defined as late payments divided by open credit accounts. This allowed for quick comparisons between customer profiles and identification of unusually high-risk cases.
-         <p>  
-          
-          <h2>Results</h2>
-          <ul>
-            <li>Certain cities like Hamilton and London had higher concentrations of late payments, signalling geographic risk clusters.</li>
-            <li>Response time inconsistencies across assignees were visible in the pivot table; some team members consistently closed requests faster, signaling uneven workloads or skill mismatches</li>
-            <li>Escalations were more likely in specific departments, pointing to team-level workflow or communication gaps. Targeted training or process reviews in these departments could reduce friction.</li>
-          </ul>
+<style>
+  body {
+    counter-reset: section sub;
+  }
+
+  h2 {
+    counter-increment: section;
+    counter-reset: sub;
+    color: #203350;
+  }
+
+  h2::before {
+    content: counter(section) ". ";
+    font-weight: bold;
+  }
+
+  h3 {
+    counter-increment: sub;
+    color: #d99a7d;
+  }
+
+  h3::before {
+    content: counter(section) "." counter(sub) " ";
+    font-weight: bold;
+  }
+</style>
+
+<h2>Project Name</h2>
+<p>CIBC Credit Risk Dashboard – Excel-Based Business Analysis</p>
+
+<h2>Overview</h2>
+<p>
+  This project simulates a credit risk monitoring task for CIBC using Excel. I analyzed credit-related data for businesses across Ontario using a public Kaggle dataset that includes variables such as business type, revenue, debt-to-income ratio, and payment status. The goal was to build an Excel dashboard that helps analysts assess account risk, track payment behavior by sector, and support more informed credit decisions at scale.
+</p>
+
+<h2>Objective</h2>
+<p>
+  The objective was to develop a tool that could identify high-risk accounts and surface payment patterns by geography and sector. This included automating risk classification, analyzing delinquency rates, and generating simple but actionable metrics for portfolio management and credit decision-making.
+</p>
+
+<h2>Methodology</h2>
+
+<h3>Excel Features Demonstrated</h3>
+<p>
+  To build this tool, I used a combination of Excel’s core analytical functions:
+</p>
+<ul style="margin-left: 1.5rem;">
+  <li><strong>VLOOKUP</strong> to assign a risk score based on number of late payments</li>
+  <li><strong>SUMIF/SUMIFS</strong> to aggregate payments by city and business type</li>
+  <li>A <strong>calculated column</strong> to determine each customer’s delinquency rate, defined as late payments divided by total credit accounts</li>
+  <li><strong>Conditional formatting</strong> and <strong>slicers</strong> to highlight outliers and enable exploratory filtering</li>
+</ul>
+
+<h2>Results</h2>
+<ul>
+  <li>Cities like <strong>Hamilton</strong> and <strong>London</strong> showed higher rates of delinquent accounts, suggesting localized risk</li>
+  <li>Customers with more than three late payments often had <strong>delinquency rates above 100%</strong>, flagging them as urgent cases</li>
+  <li>A <strong>0–5 risk score system</strong>, generated using formulas, streamlined account triage and supported faster credit review workflows</li>
+</ul>
+
+<h2>Business Relevance</h2>
+<p>
+  This dashboard demonstrates how Excel can be used to automate credit risk classification and identify high-risk segments within a portfolio. It reflects how financial institutions like CIBC might leverage spreadsheet-based models for internal monitoring, especially in small-to-mid scale portfolios or early-stage evaluations.
+</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
       <!-- Portfolio Details Section -->
