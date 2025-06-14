@@ -54,10 +54,10 @@ export const portfolioItems = [
     year: "2025",
     link: "ux.html",
     image: {
-      src: "assets/img/cxux.png",
+      src: "assets/img/portfolio/cxux.png",
       alt: "",
     },
-    category: ["excel", "python"],
+    category: ["cxux"],
   },
 ];
 
