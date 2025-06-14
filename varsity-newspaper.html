@@ -159,7 +159,28 @@
           
           <h3>Feature Engineering</h3>
           <p>
-            Variables included: number of papers dropped, number picked up, weather, program zone, time of drop, and location coordinates.
+           <h3>Feature Selection Rationale</h3>
+<p>
+  I selected variables such as <strong>“day of the week”</strong>, <strong>“program zone”</strong>, and <strong>“stand location”</strong> based on hypotheses about factors likely to influence pickup behavior:
+</p>
+<ul>
+  <li>
+    <strong>Day of the Week:</strong> I hypothesized that midweek editions (e.g., Wednesday and Thursday) might see higher engagement due to routine campus schedules and more stable foot traffic.
+  </li>
+  <li>
+    <strong>Program Zone:</strong> Since each stand was placed near buildings serving different academic programs (e.g., STEM, humanities, business), I wanted to explore whether faculty demographics or student routines influenced pickup rates.
+  </li>
+  <li>
+    <strong>Stand Location:</strong> Some stands were in high-traffic or social areas (e.g., cafeterias, libraries), while others were near lecture halls. I expected location type to significantly impact visibility and pickup volume.
+  </li>
+  <li>
+    <strong>Weather:</strong> After observing anomalies in the data, I introduced daily weather (rain vs. clear) to test if it explained sudden drops in pickup rates.
+  </li>
+</ul>
+<p>
+  These engineered variables allowed for more nuanced segmentation and helped surface actionable insights, such as adjusting print volume on rainy days or optimizing stand placement.
+</p>
+
           </p>
           
           <h3>Dashboard Development</h3>
