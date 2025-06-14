@@ -137,67 +137,116 @@
             <div class="swiper-pagination"></div>
           </div>
 
-          <div class="row justify-content-between gy-4 mt-4">
-            <div class="col-lg-12" data-aos="fade-up">
-              <div class="portfolio-description">
-                <h2>Case Study: Optimizing Branch Performance</h2>
-                <p>
-                  This case study is based on a public dataset I sourced from
-                  Kaggle, representing anonymized transactional data across 20
-                  bank branches in Ontario. The dataset includes variables such
-                  as transaction volume, service duration, service category, and
-                  geographic location. My goal was to simulate how a bank might
-                  use real-time data dashboards to understand branch-level
-                  performance and customer behavior, and to inform operational
-                  decision-making. My analysis was conducted using Power BI to
-                  visualize key metrics and uncover actionable trends.
-                </p>
-              </div>
-              <div class="portfolio-description">
-                <h2>Key Insights</h2>
-                <p>
-                  <b>City-Level Transaction Patterns</b>
-                </p>
-                <p>
-                  Ottawa and Toronto lead in transaction volume, suggesting
-                  higher customer engagement or denser populations in these
-                  areas. Smaller cities such as London and Hamilton contribute
-                  less overall activity, possibly due to fewer branches or lower
-                  foot traffic.
-                </p>
-                <p>
-                  <b>Monthly Trends</b>
-                </p>
-                <p>
-                  Transaction volume was highest in January, with a steady
-                  decline observed through to April. This seasonal drop may
-                  indicate reduced customer activity post-year-end or delayed
-                  demand for advisory services in Q2.
-                </p>
-                <p>
-                  <b>Service Category Balance</b>
-                </p>
-                <p>
-                  The near 50/50 split between Core Banking and Advisory
-                  services suggests a diversified branch role, where both
-                  day-to-day banking and personalized financial consultations
-                  are equally in demand.
-                </p>
-              </div>
-              <div class="portfolio-description">
-                <h2>Strategic Recommendations:</h2>
-                <p>
-                  <b>Allocate More Resources to High-Volume Cities</b>: Ottawa
-                  and Toronto may benefit from additional staffing or extended
-                  service hours.
-                </p>
-                <p>
-                  <b>Investigate Monthly Decline</b>: Further analysis is
-                  recommended to understand why transaction volume drops
-                  post-January and whether this is part of an annual pattern.
-                </p>
-              </div>
-            </div>
+       <section id="portfolio-details" class="portfolio-details section">
+  <div class="container">
+    <div class="row justify-content-start gy-4 mt-4 pe-4">
+      <div class="" data-aos="fade-up">
+
+<style>
+  body {
+    counter-reset: section sub;
+  }
+
+  h2 {
+    counter-increment: section;
+    counter-reset: sub;
+    color: #203350;
+  }
+
+  h2::before {
+    content: counter(section) ". ";
+    font-weight: bold;
+  }
+
+  h3 {
+    counter-increment: sub;
+    color: #d99a7d;
+  }
+
+  h3::before {
+    content: counter(section) "." counter(sub) " ";
+    font-weight: bold;
+  }
+</style>
+
+<h2>Project Name</h2>
+<p>Simulated Bank Branch Analysis – Performance Dashboard for Ontario Locations</p>
+
+<h2>Project Description</h2>
+<p>
+  Designed a Power BI dashboard using a public dataset of 20 anonymized bank branches in Ontario to simulate how real-time transactional data could support operational decision-making. Metrics such as service duration, transaction volume, and service category distribution were visualized to uncover actionable insights for improving customer experience and branch performance.
+</p>
+
+<h2>Introduction</h2>
+<p>
+  This project simulates how a financial institution might monitor and optimize performance across multiple branches using interactive data visualizations. I used a public Kaggle dataset to build a Power BI dashboard that visualizes customer transaction behavior, service times, and city-level performance across 20 bank branches in Ontario.
+</p>
+
+<h2>Objective</h2>
+<p>
+  The primary goal was to model how real-time operational dashboards could support branch managers and business teams in identifying trends, making data-backed staffing decisions, and better understanding demand for advisory versus core banking services.
+</p>
+
+<h2>Methodology</h2>
+
+<h3>Data Preparation</h3>
+<p>
+  The dataset included variables such as transaction volume, average service duration, service category, city, and branch coordinates. I cleaned and restructured the data to ensure compatibility with Power BI visualizations.
+</p>
+
+<h3>Feature Engineering</h3>
+<p>
+  I created calculated fields for average service duration and mapped service categories to visualize category distribution. I also segmented data by month and city to explore location-based patterns.
+</p>
+
+<h3>Dashboard Development</h3>
+<p>
+  The dashboard included:
+</p>
+<ul style="margin-left: 1.5rem;">
+  <li><strong>Geo-map</strong> of branch locations</li>
+  <li><strong>Bar chart</strong> of transaction volume by city</li>
+  <li><strong>Line chart</strong> of monthly transaction trends</li>
+  <li><strong>Donut chart</strong> showing advisory vs. core banking split</li>
+  <li><strong>KPI cards</strong> for average service duration and total branches</li>
+</ul>
+<p>
+  This structure allowed users to explore performance by both city and month, with slicers to drill into specific segments.
+</p>
+
+<h3>What-If Simulations</h3>
+<p>
+  While this version used static data, future iterations could simulate:
+</p>
+<ul style="margin-left: 1.5rem;">
+  <li><strong>Branch-level staffing changes:</strong> to optimize service duration.</li>
+  <li><strong>Seasonal demand fluctuations:</strong> and their effects on wait times.</li>
+  <li><strong>Advisory service campaigns:</strong> to shift category balances and increase engagement.</li>
+</ul>
+
+<h3>Forecasting and Projection</h3>
+<ul style="margin-left: 1.5rem;">
+  <li>
+    A preliminary analysis of monthly trends showed a noticeable drop in transaction volume after January, suggesting seasonal variation.
+  </li>
+  <li>
+    A forecast module could model how different outreach or financial planning campaigns might affect advisory service uptake or foot traffic in underperforming cities like Hamilton and London.
+  </li>
+</ul>
+
+<h2>Results</h2>
+<ul>
+  <li><strong>Ottawa and Toronto</strong> had the highest transaction volumes, suggesting dense populations or higher engagement.</li>
+  <li><strong>Average service duration</strong> across all branches was <strong>33.52 minutes</strong>.</li>
+  <li><strong>Service category usage</strong> was balanced, with 51% advisory and 49% core banking.</li>
+  <li><strong>April saw the lowest transaction volume</strong>, indicating possible seasonal drop-off.</li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
             <!-- <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
                         <div class="portfolio-info">
