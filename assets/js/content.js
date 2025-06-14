@@ -10,16 +10,6 @@ export const portfolioItems = [
     category: ["sql"],
   },
   {
-    title: "CX and UX Work",
-    year: "2025",
-    link: "ux.html",
-    image: {
-      src: "assets/img/portfolio/cxux.png",
-      alt: "",
-    },
-    category: ["cxux"],
-  },
-  {
     title: "The Varsity Newspaper",
     year: "2025",
     link: "varsity-newspaper.html",
@@ -28,6 +18,16 @@ export const portfolioItems = [
       alt: "",
     },
     category: ["tableau"],
+  },
+    {
+    title: "CX and UX Work",
+    year: "2025",
+    link: "ux.html",
+    image: {
+      src: "assets/img/portfolio/cxux.png",
+      alt: "",
+    },
+    category: ["cxux"],
   },
   {
     title: "Low Tides Properties",
