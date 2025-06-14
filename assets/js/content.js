@@ -50,11 +50,11 @@ export const portfolioItems = [
     category: ["excel"],
   },
   {
-    title: "Python and Excel Work",
+    title: "CX and UX Work",
     year: "2025",
-    link: "excel-work.html",
+    link: "ux.html",
     image: {
-      src: "assets/img/python.png",
+      src: "assets/img/cxux.png",
       alt: "",
     },
     category: ["excel", "python"],
