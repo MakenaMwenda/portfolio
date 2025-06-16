@@ -233,6 +233,10 @@
         </div>
       </section>
       <!-- /Portfolio Details Section -->
+       <section id="portfolio-details" class="portfolio-details section">
+          <div class="container">
+            <div class="row justify-content-start gy-4 mt-4 pe-4">
+              <div class="" data-aos="fade-up">
           
           <h3>Ideate</h3>
   <p>
@@ -254,74 +258,8 @@
     The final deliverables were shared through a structured PowerPoint presentation, walking stakeholders through the original journey map, persona-driven insights, design rationale, and visual redesign—helping align next steps with user needs and business strategy.
   </p>
 </section>
-      <h3>Data Preparation</h3>
-          <p>
-            Over a period of 4 months, I tracked newspaper pickup data across 10 physical stands placed in various zones across campus. Each stand’s inventory was restocked daily, and pickup counts were recorded once per day using physical sheet tracking and manual entry. This provided a consistent daily time series for each stand, allowing for comparative analysis across locations, days of the week, and program zones.
+    
 
-          </p>
-          
-          <h3>Feature Engineering</h3>
-          <p>
-           <h3>Feature Selection Rationale</h3>
-<p>
-  I selected variables such as <strong>“day of the week”</strong>, <strong>“program zone”</strong>, and <strong>“stand location”</strong> based on hypotheses about factors likely to influence pickup behavior:
-</p>
-<ul>
-  <li>
-    <strong>Day of the Week:</strong> I hypothesized that midweek editions (e.g., Wednesday and Thursday) might see higher engagement due to routine campus schedules and more stable foot traffic.
-  </li>
-  <li>
-    <strong>Program Zone:</strong> Since each stand was placed near buildings serving different academic programs (e.g., STEM, humanities, business), I wanted to explore whether faculty demographics or student routines influenced pickup rates.
-  </li>
-  <li>
-    <strong>Stand Location:</strong> Some stands were in high-traffic or social areas (e.g., cafeterias, libraries), while others were near lecture halls. I expected location type to significantly impact visibility and pickup volume.
-  </li>
-  <li>
-    <strong>Weather:</strong> After observing anomalies in the data, I introduced daily weather (rain vs. clear) to test if it explained sudden drops in pickup rates.
-  </li>
-</ul>
-<p>
-  These engineered variables allowed for more nuanced segmentation and helped surface actionable insights, such as adjusting print volume on rainy days or optimizing stand placement.
-</p>
-
-          </p>
-          
-          <h3>Dashboard Development</h3>
-          <p>
-           The dashboard includes:
-          </p>
-           <ul style="margin-left: 1.5rem;">
-            <li>A map of distribution stands using latitude and longitude.</li>
-            <li>Bar and line graphs analyzing pickup trends by day of the week, weather, and time of drop.</li>
-            <li>Dual-axis charts comparing pickup percentage with count data per stand</li>
-          </ul>
-      
-          <h2>Results</h2>
-          <ul style="margin-left: 1.5rem;">
-            <li> Midweek drops, particularly on Thursdays, consistently saw the highest pickup rates, indicating a clear pattern in student engagement tied to academic routines.</li>
-            <li>Hart House and Koffler Centre emerged as key distribution points, while program zones like Mixed and Social Sciences had the most active readership.</li>
-            <li>Weather had a noticeable impact; clear days boosted pickups, while snow and rain reduced them significantly, suggesting seasonal adjustments could improve performance. </li>
-            <li>Surprisingly, the exact time of morning drop had little effect, offering flexibility in scheduling.</li>
-          </ul>
-
-        
-                <h2>Outcome & Impact</h2>
-<p>
-  As a result of this analysis, I presented data-driven recommendations to the editorial and distribution teams. These insights led to tangible operational improvements, including:
-</p>
-<ul style="margin-left: 1.5rem;">
-  <li><strong>15–20% reduction in leftover print waste</strong> on low-pickup days by adjusting volume, especially for Monday and Friday editions.</li>
-  <li><strong>Repositioning of two stands</strong> from low-traffic academic zones to higher-visibility social spaces, resulting in an estimated 12% increase in weekly pickups at those locations.</li>
-  <li><strong>Improved midweek planning:</strong> Based on higher engagement on Wednesdays and Thursdays, the editorial team began releasing feature stories and opinion columns midweek, aligning content value with peak pickup behavior.</li>
-  <li><strong>Weather-aware adjustments:</strong> Teams began monitoring rain forecasts to preemptively reduce distribution where past data showed pickup rates dropped sharply during poor weather.</li>
-</ul>
-<p>
-  These outcomes not only reduced waste but also enhanced the paper’s visibility and reach, providing a simple framework for ongoing performance tracking using Tableau dashboards.
-</p>
-
-      <!-- Portfolio Details Section -->
-      <section id="portfolio-details" class="portfolio-details section">
-       
 
  <div class="container" data-aos="fade-up">
             <div class="portfolio-details-slider swiper init-swiper">
