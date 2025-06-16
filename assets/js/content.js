@@ -11,7 +11,7 @@ export const portfolioItems = [
   },
   {
     title: "The Varsity Newspaper",
-    year: "2025",
+    year: "Varsity Newspaper – Analysing Pickup Rates Using Tableau",
     link: "varsity-newspaper.html",
     image: {
       src: "assets/img/portfolio/tableau-portfolio-img.jpeg",
@@ -21,7 +21,7 @@ export const portfolioItems = [
   },
     {
     title: "CX and UX Work",
-    year: "2025",
+    year: "Improving Savings Engagement – Human-Centered UX Case Study for Scotiabank",
     link: "ux.html",
     image: {
       src: "assets/img/portfolio/cxux.png",
@@ -31,7 +31,7 @@ export const portfolioItems = [
   },
   {
     title: "Low Tides Properties",
-    year: "2025",
+    year: "LowTide Properties – Public Engagement Dashboard for South Flats Installation",
     link: "low-tides.html",
     image: {
       src: "assets/img/portfolio/python-portfolio-img.jpeg",
