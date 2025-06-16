@@ -1,7 +1,7 @@
 export const portfolioItems = [
   {
     title: "SQL",
-    year: "2025",
+    year: "Client Product Engagement Insights – Simulated SQL Case Study for RBC",
     link: "sql.html",
     image: {
       src: "assets/img/portfolio/sql-portfolio-img.jpeg",
