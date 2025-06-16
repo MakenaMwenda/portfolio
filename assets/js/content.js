@@ -41,7 +41,7 @@ export const portfolioItems = [
   },
   {
     title: "Practice Exploratory",
-    year: "2025",
+    year: "Simulated Bank Branch Analysis – Performance Dashboard for Ontario Locations",
     link: "practice-exploratory.html",
     image: {
       src: "assets/img/portfolio/powerbi-portfolio-img.jpeg",
@@ -51,7 +51,7 @@ export const portfolioItems = [
   },
   {
     title: "Excel Work",
-    year: "2025",
+    year: "CIBC Credit Risk Dashboard – Excel-Based Business Analysis",
     link: "excel-work.html",
     image: {
       src: "assets/img/portfolio/excel-portfolio-img.jpeg",
