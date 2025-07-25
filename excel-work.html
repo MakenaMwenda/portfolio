@@ -186,12 +186,12 @@
 
   <h3>Data Issues Identified</h3>
   <p>
-    The two datasets provided—Product Uptake Data and Customer Value Data—were structured differently and required cleaning before analysis. Key data issues included:
+    The two datasets provided, Product Uptake Data and Customer Value Data, were structured differently and required cleaning before analysis. Key data issues included:
   </p>
   <ul>
-    <li>Inconsistent branch naming. For example, “Toronto Main” appeared as “Toronto - Main” in one dataset and “Toronto Main” in another.</li>
-    <li>Different segmentation logic. One dataset categorized data by product type, the other by customer value segment.</li>
-    <li>No shared unique ID. There was no consistent row-level key for joining, such as customer ID or branch ID, meaning a direct merge was not feasible.</li>
+    <li><strong>Inconsistent branch naming:</strong> For example, “Toronto Main” appeared as “Toronto - Main” in one dataset and “Toronto Main” in another.</li>
+    <li><strong>Different segmentation logic:</strong> One dataset categorized data by product type, the other by customer value segment.</li>
+    <li><strong>No shared unique ID:</strong> There was no consistent row-level key for joining, such as customer ID or branch ID, meaning a direct merge was not feasible.</li>
   </ul>
 
   <h3>Data Cleaning Steps</h3>
@@ -199,37 +199,14 @@
     To align the datasets:
   </p>
   <ul>
-    <li>A Branch Name Mapping Table was created to standardize inconsistent names using XLOOKUP (e.g., aligning “Hamilton Branch” with “Hamilton”).</li>
-    <li>A Clean Branch Name column was added in both datasets for consistency.</li>
-    <li>Extra spaces were removed using the TRIM function and casing was standardized using UPPER.</li>
-    <li>A Month–Branch composite key (e.g., "Toronto Main - January") was created to enable potential cross-referencing.</li>
+    <li>Extra spaces were removed using the <strong>TRIM</strong> function and casing was standardized using <strong>UPPER</strong>.</li>
     <li>Region values were verified and minor corrections were applied to ensure label consistency.</li>
   </ul>
-  <p>
-    Screenshots of the cleaned data and mapping table were saved for documentation.
-  </p>
+
 
   <h3>Pivot Table Creation</h3>
   <p>
-    After cleaning, two pivot tables were created to extract insights:
-  </p>
-  <ul>
-    <li>
-      <strong>Product Uptake Pivot Table</strong><br>
-      Rows: Clean Branch Name<br>
-      Columns: Product Type (Mortgage, Credit Card, etc.)<br>
-      Values: Sum of Number of Signups<br>
-      Filters: Month and Region
-    </li>
-    <li>
-      <strong>Customer Value Pivot Table</strong><br>
-      Rows: Clean Branch Name<br>
-      Columns: Customer Segment (High, Medium, Low Value)<br>
-      Values: Sum of Average Value (CAD)<br>
-      Filters: Month and Region
-    </li>
-  </ul>
-  <p>
+    After cleaning, two pivot tables were created to extract insights.
     These tables allowed analysis by branch and customer type, while enabling time period and region filtering.
   </p>
 
