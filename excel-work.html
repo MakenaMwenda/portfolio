@@ -181,18 +181,85 @@
   <li><strong>Conditional formatting</strong> and <strong>slicers</strong> to highlight outliers and enable exploratory filtering</li>
    </ul>
 
+  <section id="methodology">
   <h2>Methodology</h2>
 
-<h3>Excel Features Demonstrated</h3>
-<p>
-  To build this tool, I used a combination of Excel’s core analytical functions:
-</p>
-<ul style="margin-left: 1.5rem;">
-  <li><strong>VLOOKUP</strong> to assign a risk score based on number of late payments</li>
-  <li><strong>SUMIF/SUMIFS</strong> to aggregate payments by city and business type</li>
-  <li>A <strong>calculated column</strong> to determine each customer’s delinquency rate, defined as late payments divided by total credit accounts</li>
-  <li><strong>Conditional formatting</strong> and <strong>slicers</strong> to highlight outliers and enable exploratory filtering</li>
-</ul>
+  <h3>Data Issues Identified</h3>
+  <p>
+    The two datasets provided—Product Uptake Data and Customer Value Data—were structured differently and required cleaning before analysis. Key data issues included:
+  </p>
+  <ul>
+    <li>Inconsistent branch naming. For example, “Toronto Main” appeared as “Toronto - Main” in one dataset and “Toronto Main” in another.</li>
+    <li>Different segmentation logic. One dataset categorized data by product type, the other by customer value segment.</li>
+    <li>No shared unique ID. There was no consistent row-level key for joining, such as customer ID or branch ID, meaning a direct merge was not feasible.</li>
+  </ul>
+
+  <h3>Data Cleaning Steps</h3>
+  <p>
+    To align the datasets:
+  </p>
+  <ul>
+    <li>A Branch Name Mapping Table was created to standardize inconsistent names using XLOOKUP (e.g., aligning “Hamilton Branch” with “Hamilton”).</li>
+    <li>A Clean Branch Name column was added in both datasets for consistency.</li>
+    <li>Extra spaces were removed using the TRIM function and casing was standardized using UPPER.</li>
+    <li>A Month–Branch composite key (e.g., "Toronto Main - January") was created to enable potential cross-referencing.</li>
+    <li>Region values were verified and minor corrections were applied to ensure label consistency.</li>
+  </ul>
+  <p>
+    Screenshots of the cleaned data and mapping table were saved for documentation.
+  </p>
+
+  <h3>Pivot Table Creation</h3>
+  <p>
+    After cleaning, two pivot tables were created to extract insights:
+  </p>
+  <ul>
+    <li>
+      <strong>Product Uptake Pivot Table</strong><br>
+      Rows: Clean Branch Name<br>
+      Columns: Product Type (Mortgage, Credit Card, etc.)<br>
+      Values: Sum of Number of Signups<br>
+      Filters: Month and Region
+    </li>
+    <li>
+      <strong>Customer Value Pivot Table</strong><br>
+      Rows: Clean Branch Name<br>
+      Columns: Customer Segment (High, Medium, Low Value)<br>
+      Values: Sum of Average Value (CAD)<br>
+      Filters: Month and Region
+    </li>
+  </ul>
+  <p>
+    These tables allowed analysis by branch and customer type, while enabling time period and region filtering.
+  </p>
+
+  <h3>Combined Summary Table</h3>
+  <p>
+    Since a row-level merge was not appropriate due to dataset structure, the pivot outputs were summarized manually into one Combined Insights Table at the branch level. This table includes:
+  </p>
+  <ul>
+    <li>Total value by customer segment</li>
+    <li>Total product signups by product type</li>
+    <li>Overall branch performance indicators</li>
+  </ul>
+  <p>
+    This method supported analysis across two dimensions: customer value and product uptake. For example, branches with high-value clients but low mortgage signups were flagged as cross-selling opportunities.
+  </p>
+
+  <h3>Interactive Exploration</h3>
+  <p>
+    To support exploratory analysis:
+  </p>
+  <ul>
+    <li>Slicers were used for dynamic filtering of each pivot table by month or region.</li>
+    <li>Pivot filters were applied to view product-specific or segment-specific data.</li>
+    <li>Conditional formatting was used to highlight top and underperforming branches.</li>
+  </ul>
+  <p>
+    This setup allowed for quick comparisons and pattern identification across major cities such as Toronto, Ottawa, and Mississauga.
+  </p>
+</section>
+
   <section id="portfolio-details" class="portfolio-details section">
         <div class="container" data-aos="fade-up">
           <div class="portfolio-details-slider swiper init-swiper">
