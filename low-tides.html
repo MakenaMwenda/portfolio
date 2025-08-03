@@ -134,66 +134,63 @@
           </style>
           
           <h2>Project Name</h2>
-          <p>LowTide Properties – Public Engagement Dashboard for South Flats Installation</p>
+          <pLSimulated Amazon Rollout: Excel VBA Automation for Readiness Trackingn</p>
           
           <h2>Project Description</h2>
           <p>
-            Designed a data-driven prototype to help visualize and measure community interaction with a proposed public art installation in Vancouver’s South Flats. Using Power BI and Python, I simulated how metrics like foot traffic and dwell time could be tracked, analyzed, and used to support design choices and stakeholder decision-making.
+           As part of a simulated Amazon project management team, I supported the rollout of a new internal tech tool across global logistics and office teams. The tool aims to improve scheduling, communication, and task tracking. My responsibility was to monitor rollout readiness, automate tracking workflows using Excel macros, and generate status reports to inform leadership on progress and risks.
           </p>
-          
-          <h2>Introduction</h2>
-          <p>
-             I was engaged by Low Tide Properties to develop a digital prototype for a motion-responsive public art installation in Vancouver’s South Flats. The goal was to simulate how the sculpture could measure and respond to real-time public engagement. To support this, I built a Power BI dashboard and data model that visualized interaction data, such as foot traffic and dwell time, to inform future decisions around public space activations.
           
           <h2>Objective</h2>
           <p>
-            The primary goal was to demonstrate how digital engagement metrics could validate the value of the installation and inform future scalability. The system needed to simulate how foot traffic, dwell time, and zone-based interactions could be captured and turned into actionable insights for stakeholders.
+           <ul>
+  <li>Create a composite <strong>Readiness Score</strong> to quantify rollout preparedness across teams.</li>
+  <li>Automate project workflows using <strong>Excel Macros and VBA</strong> for efficiency and repeatability.</li>
+  <li>Generate dynamic, <strong>filterable reports</strong> to support leadership decision-making.</li>
+  <li>Ensure the workbook supports <strong>weekly updates</strong>, visual tracking, and future macro expansion.</li>
+</ul>
           </p>
           
           <h2>Methodology</h2>
           
-          <h3>Data Preparation</h3>
-          <p>
-            I generated synthetic datasets representing foot traffic counts, dwell time logs, and zone-based motion sensor triggers. This allowed for early-stage modeling in the absence of real-time hardware.
-          </p>
-          
-          <h3>Feature Engineering</h3>
-          <p>
-            Created time-of-day flags, weekday/weekend segmentation, and interaction zone labels to enrich the dataset for analysis.
-          </p>
-          
-          <h3>Dashboard Development</h3>
-          <p>
-            Built a Power BI dashboard featuring key engagement KPIs, heatmap overlays, and zone comparisons. Metrics such as average dwell time, peak visitation periods, and engagement by location were visualized to guide planning.
-          </p>
-          
-          <h3>What-If Simulations</h3>
-          <p>
-            I designed scenario models in Power BI to explore how different external factors might affect public engagement with the installation. These simulations included:
-          </p>
-          <ul style="margin-left: 1.5rem;">
-            <li><strong>Time-Based Scheduling:</strong> Compared weekday vs. weekend performance, and tested the impact of shifting activation times (e.g., from morning to evening) on foot traffic and dwell time.</li>
-            <li><strong>Weather Impact Scenarios:</strong> Modeled hypothetical reductions in engagement during rainy days, using historical weather trends to simulate expected footfall drops and test dashboard responsiveness.</li>
-            <li><strong>Zone Accessibility Changes:</strong> Assessed how temporarily closing one interaction zone (e.g., “Wing Left”) would affect overall engagement and redistribute activity across other areas.</li>
-            <li><strong>Alert Threshold Sensitivity:</strong> Used Python to simulate how different KPI thresholds (e.g., dwell time dropping from 8 to 5 minutes) would trigger alerts and recommend adjustments to the installation’s programming or design.</li>
-          </ul>
-        <p>
-          These simulations helped demonstrate how real-time data and predictive modeling could be used not just for reporting, but for actively optimizing public space experiences.
-        </p>
+         <h3>5.1 Data Preparation</h3>
+<p>
+  I cleaned the dataset by converting binary fields (e.g., <em>Infra Ready</em>, <em>Training Complete</em>, <em>Checklist Complete</em>) from "Y/N" to 1/0 using helper columns. This standardization was necessary for quantitative scoring and further automation.
+</p>
 
+<h3>Readiness Score Calculation</h3>
+<p>
+  I created a composite <strong>Readiness Score (0–100)</strong> based on five weighted inputs that reflect overall team preparedness:
+</p>
+<ul>
+  <li><strong>Infrastructure Ready</strong> – 25%</li>
+  <li><strong>Training Completion %</strong> – 25%</li>
+  <li><strong>Checklist Complete</strong> – 20%</li>
+  <li><strong>Issue Backlog Score</strong> – 15%</li>
+  <li><strong>Stakeholder Confidence</strong> – 15%</li>
+</ul>
+<p>
+  The formula penalizes incomplete training, unresolved infrastructure, and high backlog scores, while rewarding strong stakeholder confidence.
+</p>
 
-          <h3>Forecasting and Projection</h3>
-          <ul style="margin-left: 1.5rem;">
-            <li>
-              I used Power BI to create simple forecast visuals that estimated how engagement with the installation might change over time. By simulating different time periods, I identified that spring and summer months would likely have higher foot traffic and longer dwell times—helping suggest the best times to launch or scale the installation.
-            </li>
-            <li>
-              Based on community survey results, I also projected how engagement might increase with more local awareness or marketing. For example, I modeled a 10–15% increase in foot traffic if outreach was improved in nearby neighborhoods like Mount Pleasant and Kitsilano.
-            </li>
-            <li>
-              I used Python to help test how these changes could affect key metrics like average dwell time. This allowed me to explore whether certain areas of the installation might need extra support, and to give stakeholders a simple preview of what success could look like over time.
-            </li>
-          </ul>
+<h3>VBA Macro Development</h3>
+<p>
+  I wrote a macro named <code>StatusReportGenerator</code> that:
+</p>
+<ul>
+  <li>Prompts the user to filter by <strong>Region</strong> or <strong>PM Owner</strong></li>
+  <li>Copies the filtered results into a new worksheet titled <strong>Status Report</strong></li>
+  <li>Preserves formatting and optionally resets filters on the original data</li>
+  <li>Is triggered via an <strong>interactive button</strong> placed on the main worksheet</li>
+</ul>
+<p>
+  This macro is structured to be modular and easily extendable for additional filter types or formatting rules.
+</p>
+
+<h3>Interactive Elements</h3>
+<p>
+  I added a form control button on the Excel sheet that allows one-click execution of the macro. This enables non-technical users to generate tailored reports without navigating the VBA editor. The interface design prioritizes ease of use and supports integration into a broader dashboard.
+</p>
           
           
           
@@ -335,3 +332,4 @@
     <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>
+
