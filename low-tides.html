@@ -196,21 +196,6 @@
   This macro is structured to be modular and easily extendable for additional filter types or formatting rules.
 </p>
 
-<h3>Interactive Elements</h3>
-<p>
-  I added a form control button on the Excel sheet that allows one-click execution of the macro. This enables non-technical users to generate tailored reports without navigating the VBA editor. The interface design prioritizes ease of use and supports integration into a broader dashboard.
-</p>
-          
-          
-          
-          <h2>Results</h2>
-          <ul style="margin-left: 1.5rem;">
-            <li>The dashboard identified engagement peaks at 11 AM, 2 PM, and 6 PM, with longer dwell times on weekends.</li>
-            <li>“Wing Left” and “Entrance” zones had the highest interaction frequency.</li>
-            <li>A Python script was used to automate alerts when dwell time KPIs dropped below defined thresholds.</li>
-            <li>Community survey data confirmed strong support from Mount Pleasant and Kitsilano residents and showed a demand for interactive and co-created installation types.</li>
-          </ul>
-
 
           <div class="container" data-aos="fade-up">
             <div class="portfolio-details-slider swiper init-swiper">
@@ -264,6 +249,49 @@
           </div>
         </div>
       </section>
+
+      <h2>Macro Functions Overview</h2>
+<p>
+  To streamline project management tasks, I developed eight custom macros that automate core workflows. Each macro serves a specific purpose, from cleaning messy data to generating stakeholder reports. Here's a brief overview of what each one does:
+</p>
+
+<ul>
+  <li>
+    <strong>Risk Flagging Macro</strong><br>
+    Flags at-risk teams by highlighting rows where the readiness score is below 70, adoption is under 50%, or the go-live date is already past. Adds a visual risk indicator to support prioritization.
+  </li>
+
+  <li>
+    <strong>Weekly Data Cleaner Macro</strong><br>
+    Standardizes data entries by converting Y/N fields, fixing date formats, capitalizing names, filling in blanks with “N/A,” and removing duplicate rows.
+  </li>
+
+  <li>
+    <strong>Dashboard Refresher Macro</strong><br>
+    Automatically refreshes all pivot tables and charts to reflect the latest data. Includes an optional “Refresh Dashboard” button for usability.
+  </li>
+
+  <li>
+    <strong>Auto Email Summary to Stakeholders</strong><br>
+    Gathers key metrics such as average readiness and risk count, saves a visual summary as a PDF, and sends it via Outlook (or describes how the automation works).
+  </li>
+
+  <li>
+    <strong>Timeline/Gantt Chart Builder</strong><br>
+    Generates a basic Gantt chart using deployment and go-live dates to visualize timelines and highlight overdue launches with color coding.
+  </li>
+
+  <li>
+    <strong>Bulk Status Update Macro</strong><br>
+    Lets users update fields like “Training Complete” and “Checklist Complete” in bulk using a simple form or column input—ideal for status meetings or batch updates.
+  </li>
+
+  <li>
+    <strong>Recalculate Readiness Score Macro</strong><br>
+    Recomputes readiness scores across all teams using the defined formula, ensuring scores stay current as new data is entered.
+  </li>
+</ul>
+
       <!-- /Portfolio Details Section -->
     </main>
 
@@ -341,6 +369,7 @@
     <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>
+
 
 
 
