@@ -182,19 +182,25 @@
   The formula penalizes incomplete training, unresolved infrastructure, and high backlog scores, while rewarding strong stakeholder confidence.
 </p>
 
-<h3>VBA Macro Development</h3>
+<h3>4.3 VBA Macro Development</h3>
 <p>
-  I wrote a macro named <code>StatusReportGenerator</code> that:
+  I developed two VBA macros to automate key aspects of rollout monitoring and improve team-level reporting efficiency.
 </p>
+
 <ul>
-  <li>Prompts the user to filter by <strong>Region</strong> or <strong>PM Owner</strong></li>
-  <li>Copies the filtered results into a new worksheet titled <strong>Status Report</strong></li>
-  <li>Preserves formatting and optionally resets filters on the original data</li>
-  <li>Is triggered via an <strong>interactive button</strong> placed on the main worksheet</li>
-</ul>
-<p>
-  This macro is structured to be modular and easily extendable for additional filter types or formatting rules.
-</p>
+  <li>
+    <a href="assets/img/18.png" style="color: #1a73e8; text-decoration: underline; font-weight: bold;">
+      StatusReportGenerator
+    </a><br>
+    This macro prompts the user to filter the dataset by either <strong>Region</strong> or <strong>PM Owner</strong>, then copies the filtered results into a new worksheet titled <em>Status Report</em>. It preserves formatting, optionally resets filters on the original sheet, and is triggered by an <strong>interactive button</strong> placed directly on the worksheet. The macro is modular and designed to support additional filters in the future.
+  </li>
+
+  <li>
+    <a href="assets/img/portfolio/macro19.png" style="color: #1a73e8; text-decoration: underline; font-weight: bold;">
+      RiskFlaggingMacro
+    </a><br>
+    This macro evaluates each team based on three criteria: <strong>readiness score</strong>, <strong>adoption rate</strong>, and whether the <strong>go-live date</strong> is in the past. It assigns a risk level of <em>High Risk</em>, <em>Moderate Risk</em>, or <em>On Track</em>, then highlights rows with corresponding colors to enable visual scanning. To preserve the integrity of the original dataset, t
+
 
 
           <div class="container" data-aos="fade-up">
@@ -381,6 +387,7 @@
     <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>
+
 
 
 
