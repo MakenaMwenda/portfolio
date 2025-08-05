@@ -218,12 +218,6 @@
                 />
               </div>
 
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/18.png"
-                  alt=""
-                />
-              </div>
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
@@ -292,49 +286,48 @@
                 }
               }
             </script>
-            <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide">
-                <img
-                  src="assets/img/16.png"
-                  alt=""
-                />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/17.png"
-                  alt=""
-                />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/18.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-              
-            </div>
-          </div>
-        </div>
-      </section>
-            
-      
-<div class="row justify-content-start gy-4 mt-4 pe-4">
-  <div class="" data-aos="fade-up">
+           <!-- Macro Gallery Section -->
+<section id="macro-gallery" class="portfolio-details section">
+  <div class="container">
     <div class="row justify-content-start gy-4 mt-4 pe-4">
-  <div class="" data-aos="fade-up">
+      <div class="" data-aos="fade-up">
+        <h2>Macro Snapshots</h2>
+        <p>Sample screenshots from the VBA macros built for automation:</p>
+      </div>
+    </div>
+
+    <div class="macro-slider swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": { "delay": 5000 },
+          "slidesPerView": "auto",
+          "navigation": {
+            "nextEl": "#macro-gallery .swiper-button-next",
+            "prevEl": "#macro-gallery .swiper-button-prev"
+          },
+          "pagination": {
+            "el": "#macro-gallery .swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
+
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide">
+          <img src="assets/img/18.png" alt="StatusReportGenerator Macro Screenshot" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/portfolio/macro19.png" alt="RiskFlaggingMacro Macro Screenshot" />
+        </div>
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-n
+
     
-                
-      
-
-
-
       <!-- /Portfolio Details Section -->
     </main>
 
@@ -412,6 +405,7 @@
     <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>
+
 
 
 
