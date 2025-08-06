@@ -30,9 +30,9 @@ export const portfolioItems = [
     category: ["cxux"],
   },
   {
-    title: "Low Tides Properties",
-    year: "LowTide Properties – Public Engagement Dashboard for South Flats Installation",
-    link: "low-tides.html",
+    title: "Amazon Macro's Simulation",
+    year: "Simulated Amazon Rollout: Excel VBA Automation for Readiness Tracking",
+    link: "MacrosVBA.html",
     image: {
       src: "assets/img/portfolio/python-portfolio-img.jpeg",
       alt: "",
@@ -88,3 +88,4 @@ export const iconBoxes = [
     link: "#",
   },
 ];
+
