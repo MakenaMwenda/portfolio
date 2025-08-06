@@ -255,6 +255,31 @@
             Evaluates readiness score, adoption rate, and go‑live date to assign risk labels (On Track, Moderate Risk, High Risk) and applies row highlighting in a separate “Risk Flagging Report” sheet.
           </li>
         </ul>
+        <p>
+  <strong>RiskFlaggingMacro</strong><br>
+  This macro evaluates each team based on three rollout indicators: <em>readiness score</em>, <em>adoption rate</em>, and <em>go-live date</em>. Each row is assessed against the following conditions:
+</p>
+
+<ul>
+  <li>Readiness score is less than 70</li>
+  <li>Adoption rate is less than 50%</li>
+  <li>Go-live date is in the past</li>
+</ul>
+
+<p>
+  For every condition that is met, the macro adds one point to a team's risk score. Based on the total score:
+</p>
+
+<ul>
+  <li>0 conditions met → <strong>On Track</strong></li>
+  <li>1 condition met → <strong>Moderate Risk</strong></li>
+  <li>2 or more conditions met → <strong>High Risk</strong></li>
+</ul>
+
+<p>
+  Risk levels are written into a new column and highlighted using conditional row formatting. The results are saved to a dedicated worksheet titled <em>Risk Flagging Report</em> to preserve the original dataset.
+</p>
+
 
         <!-- Inline slider matching top section style -->
          <div class="container" data-aos="fade-up">
@@ -465,6 +490,7 @@ Conditional formatting highlights teams with go-live dates in the past and readi
     <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>
+
 
 
 
